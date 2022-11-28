@@ -1,0 +1,56 @@
+body {margin: 60px;
+    font-family: serif;
+
+        background-image: url(images/arisu.jpg);
+        background-size: cover;
+        }
+    h1,p{
+        color: black;
+    }
+    p{
+        font-size: 18px;
+    }
+/*フォント中央揃え*/
+P { text-align: center }
+h1 { text-align: center }
+h2 { text-align: center }
+
+/*文字かげ*/
+p {
+    text-shadow: 1px 2px 3px #808081; 
+}
+h1 {
+    text-shadow: 1px 2px 3px #808081; 
+}
+h2 {
+    text-shadow: 1px 2px 3px #808081; 
+}
+
+/*タイトル囲み枠*/
+    .box17{
+        margin:2em 0;
+        position: relative;
+        padding: 0.5em 1.5em;
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+    }
+    .box17:before, .box17:after{
+        content: '';
+        position: absolute;
+        top: -10px;
+        width: 2px;
+        height: -webkit-calc(100% + 20px);
+        height: calc(100% + 20px);
+        background-color: black;
+    }
+    .box17:before {left: 10px;}
+    .box17:after {right: 10px;}
+    .box17 p {
+        margin: 0; 
+        padding: 0;
+    }
+
+    /*memo
+    可愛い囲み枠サイト
+    https://www.moca-memo.com/2019/10/kakomiwaku.html
+    */
